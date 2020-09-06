@@ -1,0 +1,18 @@
+server:
+  port: 8080
+
+spring:
+  datasource:
+    username: root
+    url: jdbc:mysql:///mybatis?serverTimezone=UTC&useUnicode=true&characterEncoding=utf8
+    driver-class-name: com.mysql.jdbc.Driver
+    password: admin
+  redis:
+    host: localhost  #指定redis地址
+mybatis:
+  configuration:
+    map-underscore-to-camel-case: true  #开启驼峰命名规则
+
+logging:
+  level:
+    com.balsam.cache.mapper: debug
